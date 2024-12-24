@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  rivalz:
+    image: ubuntu:22.04
+    container_name: rivalz
+    volumes:
+      - ./node.sh:/root/node.sh
+    entrypoint:
+      - bash
+      - -l
+      - -c
+      - |
+        chmod +x /root/node.sh && /root/node.sh

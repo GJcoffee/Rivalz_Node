@@ -42,7 +42,7 @@ set timeout -1
 spawn rivalz run
 
 expect "Enter wallet address (EVM):"
-send "0xF62096d96c948b30B90d440d69E09C4F72d1a283\r"
+send "$wallet_address\r"
 
 expect "Select drive you want to use:"
 send "\r"
